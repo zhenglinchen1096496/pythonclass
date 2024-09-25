@@ -1,0 +1,9 @@
+# Define a number
+number = 12
+
+# If-else statement to check the condition
+if number >= 10:
+    print(f"{number} is greater than or equal to 10")
+else:
+    print(f"{number} is less than 10")
+

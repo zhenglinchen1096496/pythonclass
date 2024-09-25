@@ -1,0 +1,22 @@
+import turtle
+
+# Create a turtle object
+t = turtle.Turtle()
+
+# Move the turtle forward while drawing
+t.forward(100)
+
+# Lift the pen (stop drawing)
+t.penup()
+
+# Move the turtle without drawing
+t.forward(100)
+
+# Put the pen down (start drawing again)
+t.pendown()
+
+# Continue moving and drawing
+t.forward(100)
+
+# Finish
+turtle.done()

@@ -1,0 +1,39 @@
+import turtle
+
+def move_forward():
+    turtle.forward(10)
+
+def move_backward():
+    turtle.backward(10)
+
+def turn_left():
+    turtle.left(10)
+
+def turn_right():
+    turtle.right(10)
+
+def clear_screen():
+    turtle.clear()
+
+def draw_square():
+    for _ in range(4):
+        turtle.forward(100)
+        turtle.right(90)
+
+# Set up turtle
+turtle.speed(0)
+turtle.shape("turtle")
+
+# Keyboard bindings
+turtle.listen()
+turtle.onkey(move_forward, "Up")
+turtle.onkey(move_backward, "Down")
+turtle.onkey(turn_left, "Left")
+turtle.onkey(turn_right, "Right")
+turtle.onkey(clear_screen, "c")
+turtle.onkey(draw_square, "s")
+
+turtle.mainloop()
+
+turtle.penup()
+

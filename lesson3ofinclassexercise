@@ -1,0 +1,43 @@
+import turtle
+
+def draw_sky():
+    turtle.color("sky blue")  # Set color for sky
+    turtle.begin_fill()  # Start filling with sky color
+    for _ in range(2):
+        turtle.forward(300)
+        turtle.right(90)
+        turtle.forward(100)
+        turtle.right(90)
+    turtle.end_fill()  # End filling
+
+def draw_grass():
+    turtle.color("green")  # Set color for grass
+    turtle.begin_fill()  # Start filling with sky color
+    for _ in range(2):
+        turtle.forward(150)
+        turtle.right(90)
+        turtle.forward(70)
+        turtle.right(90)
+    turtle.end_fill()  # End filling
+
+def draw_sun():
+    turtle.color("yellow")  # Set color for sun
+    turtle.begin_fill()  # Start filling with sky color
+    turtle.circle(70)
+    turtle.end_fill()  # End filling
+
+# Initialize turtle
+turtle.shape("turtle")
+turtle.speed(3)
+
+draw_sky()
+turtle.penup()
+turtle.goto(80,-150)
+turtle.pendown()
+draw_grass()
+turtle.penup()
+turtle.goto(150,-180)
+turtle.pendown()
+draw_sun()
+
+turtle.done()
